@@ -1,87 +1,123 @@
-Flask Image Captioning App
+# 🖼️ Image Captioning Web App
 
-This is a Flask-based Image Captioning Web App that generates captions for uploaded images using a deep learning model.
+This is a **modern AI-powered Image Captioning web app** with a stylish drag-and-drop upload feature, text-to-speech for captions, and a sleek UI. It uses **Flask** for the backend and **HTML/CSS/JavaScript (Bootstrap)** for the frontend.
 
-🚀 Features
+## 🚀 Features
+- 📂 **Drag & Drop Image Upload** – Upload images in a modern, stylish way.
+- 🏗️ **Bootstrap-Powered UI** – Clean and industry-level design.
+- 🎙️ **Text-to-Speech (TTS)** – Hear the generated caption.
+- 📸 **Instant Image Preview** – See the uploaded image before processing.
+- ⚡ **Fast Processing** – Uses deep learning to generate captions quickly.
 
-Upload an image and get an AI-generated caption.
+## 📷 Demo Screenshot  
+![Demo](static/demo.png)  
+*(Add a real screenshot after deployment.)*
 
-Uses a pre-trained ResNet50 model for feature extraction.
+---
 
-Integrates with a trained LSTM-based image captioning model.
+## 🛠️ Installation & Setup
 
-Built with Flask (Python backend) and HTML, CSS, JavaScript (frontend).
-
-📂 Project Structure
-
-imagecaptioning/
-├── backend/
-│   ├── app.py  # Flask Backend
-│   ├── model/
-│   │   ├── caption_model.h5  # Trained Model
-│   │   ├── tokenizer.pkl  # Tokenizer for Text Processing
-│   ├── static/
-│   │   ├── uploads/  # Stores Uploaded Images
-│   ├── templates/
-│   │   ├── index.html  # Frontend UI
-├── README.md  # Documentation
-├── requirements.txt  # Dependencies
-
-🔧 Installation & Setup
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/YOUR_GITHUB_USERNAME/image-captioning-flask.git
-cd image-captioning-flask/backend
-
-2️⃣ Create a Virtual Environment (Optional but Recommended)
-
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/image-captioning.git
+cd image-captioning
+2️⃣ Set Up Virtual Environment
+bash
+Copy
+Edit
 python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate  # On Windows
-
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
 3️⃣ Install Dependencies
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
 4️⃣ Run the Flask App
-
+bash
+Copy
+Edit
 python app.py
+Now, open http://127.0.0.1:5000/ in your browser.
 
-The server will run at http://127.0.0.1:5000/.
+📦 File Structure
+csharp
+Copy
+Edit
+image-captioning/
+│── backend/            # Flask Backend
+│   ├── app.py          # Main Flask Application
+│   ├── static/         # Static Files (CSS, JS, Images)
+│   ├── templates/      # HTML Files
+│   ├── uploads/        # Uploaded Images
+│── frontend/           # Frontend Code
+│── models/             # Pretrained AI Model
+│── requirements.txt    # Required Python Packages
+│── README.md           # Project Documentation
+│── .gitignore          # Ignored Files
+📜 API Endpoints
+Endpoint	Method	Description
+/	GET	Homepage
+/upload	POST	Uploads image and returns caption
+🎤 How to Use Text-to-Speech (TTS)
+The generated caption can be spoken aloud using Web Speech API (JavaScript).
 
-🎨 Frontend (User Interface)
+Click the 🔊 Speak button to hear the caption.
 
-Upload an image.
+🚀 Deployment
+Deploy on Heroku:
+bash
+Copy
+Edit
+heroku login
+heroku create image-captioning-app
+git push heroku main
+Deploy on Vercel (Frontend):
+bash
+Copy
+Edit
+vercel
+🛠️ Contributing
+Feel free to fork this repository, open issues, and submit pull requests.
 
-The backend processes it and generates a caption.
+📌 Steps:
+Fork the repo 🍴
 
-The image and caption are displayed on the webpage.
+Create a new branch (git checkout -b feature-xyz)
 
-🛠 Deployment (Optional)
+Commit your changes (git commit -m 'Add feature xyz')
 
-To deploy on Heroku, AWS, or Render, follow these steps:
+Push to your branch (git push origin feature-xyz)
 
-Create a Procfile with:
+Open a Pull Request
 
-web: gunicorn app:app
+🎯 To-Do (Future Enhancements)
+🌎 Multi-language Support for captions
 
-Push code to GitHub.
+🌙 Dark Mode UI
 
-Deploy using your preferred cloud platform.
+🔍 Advanced Image Processing
 
-🤝 Contributing
+📲 Mobile App Version
 
-Feel free to fork this repository, create new features, and submit a pull request!
+❤️ Acknowledgments
+Inspired by Deep Learning for Image Captioning.
 
+Uses TensorFlow/Keras for AI model.
 
-🌟 Acknowledgments
+Web UI styled with Bootstrap.
 
-TensorFlow/Keras for Deep Learning
+📜 License
+This project is open-source under the MIT License.
 
-Flask for Backend
+⭐ If you like this project, give it a star ⭐ on GitHub!
+markdown
+Copy
+Edit
 
-Bootstrap & JavaScript for UI
+### 🔥 Next Steps
+- Add a **screenshot** (`static/demo.png`).
+- Replace `yourusername` in `git clone`.
+- Customize if needed.
 
-🚀 Enjoy Captioning! 🎉
-
+Let me know if you need more changes! 🚀
