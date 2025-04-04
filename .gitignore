@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm / VS Code
+.vscode/
+.idea/
+
+# Environment variables
+.env
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Flask cache / uploads
+instance/
+*.db
+*.sqlite3
+*.pkl
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+
+# Model & dataset folders
+models/
+checkpoints/
+weights/
+datasets/
+data/
+saved_models/
+images/
+
+# Uploads and generated content
+static/uploads/
+
+# Node modules (if using JS libraries)
+node_modules/
+
+# Test output
+htmlcov/
+coverage/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# MacOS
+*.DS_Store
+
+# Windows
+*.bak
+*.tmp
+
+# Backup files
+*.bak
+*.swp
+*.swo

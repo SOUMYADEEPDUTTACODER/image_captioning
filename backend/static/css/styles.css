@@ -1,0 +1,38 @@
+/* static/css/style.css */
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #drop-area {
+    border: 3px dashed #6c757d;
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border 0.3s;
+  }
+  
+  #drop-area:hover {
+    border-color: #0d6efd;
+  }
+  
+  #fileElem {
+    display: none;
+  }
+  
+  #preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+  }
+  
+  #caption-output {
+    font-size: 1.25rem;
+    color: #343a40;
+    font-weight: 500;
+  }
+  
+  .card {
+    border-radius: 2rem;
+  }
+  
